@@ -25,8 +25,6 @@ let grid3 = [
     [0,1,1,1,0]
 ];
 
-console.log(app([]))
-
 describe('Count Islands', () => {
 
     it('should find 1 island', ()=> {
