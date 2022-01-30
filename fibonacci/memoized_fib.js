@@ -10,5 +10,4 @@ const fib = (num) => {
 let test1 = fib(7);
 let test2 = fib(10);
 
-console.log(test1);
-console.log(test2);
+module.exports.fib = fib;
