@@ -1,4 +1,4 @@
-const cipher = (str, shiftNum) => {
+module.exports = cipher = (str, shiftNum = 13) => {
     let  shiftStr = '';
     str = str.toUpperCase();
     for(let char of str) {
@@ -6,10 +6,7 @@ const cipher = (str, shiftNum) => {
         let charCode = char.charCodeAt();
         let newCode = charCode < 65 || charCode > 90 ? charCode : charCode + shiftNum;
 
-        if(newCode - 1 >= 90) {
-            console.log('over 90 ', (newCode-1) % 90)
-            newCode = ((newCode-1) % 90) + 65;
-        }
+        if(newCode - 1 >= 90) newCode = ((newCode-1) % 90) + 65;
         shiftStr += String.fromCharCode(newCode);
     }
 
@@ -17,4 +14,4 @@ const cipher = (str, shiftNum) => {
         
 };
 
-console.log(cipher('SERR PBQR PNZC', 2));
+// console.log(cipher('SERR PBQR PNZC', 2));
