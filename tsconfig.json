@@ -2,7 +2,7 @@
     "compilerOptions": {
         "rootDir": "./",
         "outDir": "./dist",
-        "allowJs": true,
+        // "allowJs": true,
         "skipLibCheck": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
