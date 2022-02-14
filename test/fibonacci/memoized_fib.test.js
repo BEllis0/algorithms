@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 const expect  = require('chai').expect;
 
-const app = require('../../fibonacci/memoized_fib.js').fib;
+const app = require('../../dist/fibonacci/memoized_fib.js').fibMemo;
 
 describe('Memoized Fib', () => {
     it('fib should return a number', () => {
