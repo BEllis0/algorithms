@@ -25,6 +25,7 @@ type TreeNode = {
 };
 
  module.exports.maxDepth = function(root: any) {
+    if(root === null) return root;
     let queue = [ root ];
     let depth = 0;
     while(queue.length) {
