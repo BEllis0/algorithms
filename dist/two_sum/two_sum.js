@@ -23,11 +23,8 @@
 module.exports.twoSum = function (nums, target) {
     var map = {};
     nums.forEach(function (num, i) {
-        // if(target-num in map) console.log([map[target-num], i]);
-        if (target - num in map) {
-            console.log('found', [map[target - num], i]);
+        if (target - num in map)
             return [map[target - num], i];
-        }
         map[num] = i;
     });
     return false;
