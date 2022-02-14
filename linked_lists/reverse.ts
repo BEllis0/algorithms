@@ -1,17 +1,3 @@
-interface LLNode  {
-    val: any,
-    next: any,
-    prev: LLNode|null
-};
-
-class LLNode {
-    constructor(val:number) {
-        this.val = val;
-        this.next = null;
-        this.prev = null;
-    };
-};
-
 const reversedLinkedList = (head: LLNode) => {
     let current = head;
     let stack = [];
