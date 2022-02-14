@@ -1,7 +1,7 @@
 "use strict";
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-var app = require('../../fibonacci/memoized_fib.js').fib;
+var app = require('../../dist/fibonacci/memoized_fib.js').fibMemo;
 describe('Memoized Fib', function () {
     it('fib should return a number', function () {
         expect(app(1)).to.be.a('number');
