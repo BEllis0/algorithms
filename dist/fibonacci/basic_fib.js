@@ -7,7 +7,4 @@ var fib = function (num) {
     // recurse with the num below and 2 nums below
     return fib(num - 1) + fib(num - 2);
 };
-var test1 = fib(7);
-var test2 = fib(10);
-console.log(test1);
-console.log(test2);
+module.exports.fib = fib;
